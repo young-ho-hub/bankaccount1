@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>신한은행</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="mshinhan_banner_800x400.png" alt="Shinhan Bank Logo" class="logo">
+  </div>
+
+  <main>
+    <h1>계좌 거래내역 조회</h1>
+    <input type="text" id="account-number" placeholder="계좌번호"><br>
+    <input type="password" id="password" placeholder="비밀번호"><br><br>
+    <button onclick="generateStatement()">다운로드</button>
+  </main>
+</body>
+</html>
